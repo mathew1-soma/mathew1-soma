@@ -2,7 +2,7 @@ class BankAccount:
     def __init__(self):
         self.balance = 20000
         print('WELCOME TO SOMA TRUST BANK LTD')
-        print('*******************************')
+        print('°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°')
 
     def PinCode(self):
         while True:
@@ -23,7 +23,7 @@ class BankAccount:
                 Amount = int(Amount)
                 if Amount > 0:
                     NewBalance = self.balance + Amount
-                    return f'\n******************************\nAmount Deposited: USH.{Amount}\nAccount Balance: USH.{NewBalance}'
+                    return f'\n°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°\nAmount Deposited: USH.{Amount}\nAccount Balance: USH.{NewBalance}'
                 else:
                     print('Please enter correct amount')
             except:
@@ -36,7 +36,7 @@ class BankAccount:
                 Amount = int(Amount)
                 if Amount <= self.balance:
                     NewBalance = self.balance - Amount
-                    return f'\n******************************\nAmount Withdrawn: USH.{Amount}\nAccount Balance: USH.{NewBalance}'
+                    return f'\n°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°\nAmount Withdrawn: USH.{Amount}\nAccount Balance: USH.{NewBalance}'
                 else:
                     print('Insuficient balance')
             except:
@@ -47,10 +47,10 @@ class BankAccount:
 
     def TransactionId(self):
         import random
-        return f'Transaction ID: {random.randint(100000000000, 1000000000000)}\nTHANK YOU!\n******************************'
+        return f'Transaction ID: {random.randint(100000000000, 1000000000000)}\nTHANK YOU!\n°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°'
 
     def Quiting(self):
-        print('***********************************************************')
+        print('°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°')
         print(f'THANK YOU FOR CHOOSING SOMA TRUST BANK, PLEASE COME AGAIN')
 
 s = BankAccount()
