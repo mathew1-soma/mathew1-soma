@@ -1,12 +1,13 @@
 class BankAccount:
     def __init__(self):
+        #set the innitial amount in the account to 20000
         self.balance = 20000
         print('WELCOME TO SOMA TRUST BANK LTD')
         print('°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°')
 
     def PinCode(self):
         while True:
-            pin = input('Enter your pin: ')
+            pin = input('Enter your pin(4 digits): ')
             if len(pin) == 4:
                 try:
                     pin == int(pin)
@@ -52,14 +53,9 @@ class BankAccount:
 
     def date(self):
         import datetime
-        now = datetime.datetime.now()
-        year = now.year
-        month = now.month
-        day = now.day
-        print(f'DATE: {day}/{month}/{year}')
-        hour = now.hour
-        minute = now.minute
-        second = now.second
+        x = datetime.datetime.now()
+        print(x.strftime('%d %A %B %Y'))
+        return x.strftime('%H %M %S %p')
 
         print(f'TIME: {hour} : {minute} : {second}')
 
