@@ -1,8 +1,8 @@
 class passwordMG:
     def __init__(self):
         print('WELCOME TO PASSWORD MANAGER')
-        self.username = 'user'
-        self.password = 'user'
+        self.username = 'user'   //username is 'user'
+        self.password = 'user12'  //password is 'user12'
 
     def login(self):
         def passwordGenerator():
@@ -57,8 +57,8 @@ class passwordMG:
                 else:
                     print('Selected option currently un available')
         while True:
-            username = str(input('Enter username: '))
-            password = str(input('Enter password: '))
+            username = str(input('Enter username(user): '))
+            password = str(input('Enter password(user12): '))
             if password == self.password:
                 options()
                 break
